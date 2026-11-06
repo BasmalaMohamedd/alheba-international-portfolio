@@ -1,0 +1,35 @@
+import Image from "next/image";
+import Navbar from "./components/ui/Navbar";
+import HeroSection from "./sections/HeroSection";
+import SocialProofSection from "./sections/SocialProofSection";
+import SectorsSection from "./sections/SectorsSection";
+import AboutSection from "./sections/AboutSection";
+import StorySection from "./sections/StorySection";
+import ContactForm from "./sections/ContactForm";
+import Footer from "./components/ui/Footer";
+import CountriesSection from "./sections/CountriesSection";
+
+export default function Home() {
+  return (
+    <>
+    <header className="bg-[#F1F5F9]">
+        <Navbar />
+    </header>
+    <main className="">
+      
+      <HeroSection />
+      <SocialProofSection />
+      <SectorsSection />
+      <AboutSection />
+      {/* <CountriesSection /> */}
+      <StorySection />
+      {/* <ContactForm /> */}
+    </main>
+    <footer>
+      <Footer />
+    </footer>
+
+    </>
+    
+  );
+}
