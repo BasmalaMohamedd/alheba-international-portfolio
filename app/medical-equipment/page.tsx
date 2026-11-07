@@ -9,7 +9,14 @@ export const metadata: Metadata = {
 const MedicalEquipmentPage: React.FC = () => {
   return (
     <div>
-      Medical Equipment
+      <h1>Medical Equipment</h1>
+      <section>
+        <h3>Our Products</h3>
+        <p>At Alheba, We aim to bring to egypt the best qualities of medical equipment from china</p>
+        <div>
+          
+        </div>
+      </section>
     </div>
   )
 }

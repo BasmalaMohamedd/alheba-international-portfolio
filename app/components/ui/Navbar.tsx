@@ -10,7 +10,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-brand-gray-primary relative z-50 flex items-center justify-between px-2 md:px-10 py-3
+    <nav className="fixed top-0 w-full bg-brand-gray-primary z-50 flex items-center justify-between px-2 md:px-10 py-3
       backdrop-blur-md
       border-b border-gray-100
       shadow-[0_2px_15px_rgba(0,0,0,0.06)]">
