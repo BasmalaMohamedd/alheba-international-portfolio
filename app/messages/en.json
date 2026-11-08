@@ -1,0 +1,74 @@
+{
+    "HomePage": { 
+        "hero" : {
+        "title": "AlHeba International",
+        "hookStart": "Exporting and Importing high-quality",
+        "hookSteel": "steel",
+        "hookMiddle": "and",
+        "hookMedical": "medical equipment",
+        "hookEnd": "across the Middle East",
+        "description": "At AlHeba, bring you the experience of the biggest companies of iron and steel, to deliver you high-quality steel and premium medical equipment from Egypt across the Middle East",
+        "cta" : "Explore Our Sectors",
+        "discover": "Discover AlHeba"
+        
+
+    },
+    "navbar": {
+        "home": "Home",
+        "steel sector": "Steel Sector",
+        "medical equipment sector": "Medical Equipment Sector",
+        "about": "About",
+        "story": "Story",
+        "contact": "Contact",
+        "language": "Language",
+        "logo": "logo-en.png",
+        "alheba": "AlHeba",
+        "international": "International"
+    },
+    "sectors":{
+        "explore our sectors": "Explore Our Sectors",
+        "steel exporting and importing": "Steel Exporting and Importing",
+        "steel description": "Discover our high-quality steel products and services.",
+        "learn more": "Learn More",
+        "medical equipment importing": "Medical Equipment Importing",
+        "medical description": "Discover our high-quality medical equipment products, brought from china."
+        
+    },
+    "about": {
+        "title": "About AlHeba International",
+        "body": "Established in 1989, Al-Heba International Trading and Marketing EST. is a distinguished name in the iron and metal trade field across Egypt and the Middle East. With origins rooted in deep industry experience, we are dedicated to both the importation and exportation of high-quality iron products. Our extensive network allows us to act as agents for some of the most prominent Arabian companies and factories, facilitating trade throughout the Arab world and beyond, including markets in Saudi Arabia, Jordan, Emirates, Kuwait, Sudan, Yemen, Libya, Turkey, and Tunisia. We pride ourselves on selecting international factories of the highest standards to maintain our reputation for excellence and uniqueness in the market.",
+        "img": "logo-en.png"
+    },
+    "story":{
+        "our story":"Our Story",
+        "founder": "Eng. Ismail A. Aly",
+        "section1": "The journey of Al-Heba begins with the vision of Eng. Ismail Ahmed Aly. Having served as the General Manager for one of the largest iron and metal companies in the Kingdom of Saudi Arabia, he brought a wealth of experience to his own venture. In the mid-1980s, the concept of exporting Egyptian iron products abroad took hold, leading to the formal establishment of Al-Heba International Trading and Marketing EST. in 1989.",
+        "section2": "Our initial business focused on exporting iron products to the Kingdom of Saudi Arabia. We quickly expanded, entering the Jordanian market, and within two years, we were exporting to the Emirates and Kuwait, positioning ourselves as a leading exporting company in Egypt and the region. Our growth trajectory continued as we became agents for major Arabian firms and factories, broadening our reach to Sudan, Yemen, Libya, Turkey, and Tunisia. Over more than a quarter of a century, this expansion has solidifed Al-Heba as a respected name in the Arab iron market. In 2004, we diversified our operations further by entering the field of importing iron products, carefully selecting high-quality international factories to ensure our continued distinction in the industry."
+    },
+    "footer":{
+        "description": "Connecting markets through quality steel and medical equipment. Delivering trusted products and reliable solutions across Egypt and the Middle East.",
+        "our sectors": "Our Sectors",
+        "steel sector": "Steel Sector",
+        "medical equipment sector": "Medical Equipment Sector"
+
+    },
+    "contact":{
+        "title": "Contact Us",
+        "name": "Your Name",
+        "email": "Your Email",
+        "message": "Your Message",
+        "select": "Select",
+        "steel sector": "Steel Sector",
+        "medical equipment sector": "Medical Equipment Sector",
+        "submit": "Send Message"
+
+    },
+    "socialProof": {
+      "yearEstablished": "Year Established",
+      "primaryMarkets": "Primary Markets",
+      "qualityGuaranteed": "Quality Guaranteed",
+      "tenplus":"10+"
+    }
+    
+}
+}

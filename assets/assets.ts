@@ -6,4 +6,5 @@ export const ASSETS = {
   medicalCover,
 } as const;
 
+
 export type AssetKey = keyof typeof ASSETS;
