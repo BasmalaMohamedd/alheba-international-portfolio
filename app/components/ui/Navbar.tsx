@@ -5,8 +5,13 @@ import React, { useState } from "react";
 import { LuMenu } from "react-icons/lu";
 import Logo from "../navbar/Logo";
 import NavMenu from "../navbar/NavMenu";
+import { Locale } from "next-intl";
 
-const Navbar = () => {
+type Props = {
+    
+}
+
+const Navbar = (props: Props) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
