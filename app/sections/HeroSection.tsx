@@ -1,81 +1,66 @@
 
-"use client";
-
-import { useTranslations } from "next-intl";
 import React from "react";
 import { LuArrowRight, LuGlobe } from "react-icons/lu";
 
 const HeroSection = () => {
-  const t = useTranslations("HomePage.hero");
-
   return (
-    <section className="relative isolate md:h-screen min-h-160 w-full flex items-center overflow-hidden">
-
-      {/* Background image */}
-      <div
-        className="
-          absolute inset-0 -z-20
-          bg-[url('/hero-bg.png')]
-          bg-cover bg-center bg-no-repeat
-          rtl:-scale-x-100
-        "
-      />
-
+    <section
+      className="relative md:h-screen min-h-160 w-full
+      bg-[url('/hero-bg.png')]
+      bg-cover bg-center bg-no-repeat
+      flex items-center"
+    >
       {/* Dark overlay */}
-      <div className="
-        absolute inset-0 z-10
-        bg-linear-to-r from-[#111827]/90 via-[#111827]/65 to-black/20
-        rtl:bg-linear-to-l
-      " />
+      <div className="absolute inset-0 bg-linear-to-r from-[#111827]/90 via-[#111827]/65 to-black/20" />
+
+      
 
       {/* Hero Content */}
-      <div className="relative z-10 px-10 md:px-15 text-white max-w-3xl">
-
+      <div className="relative px-10 md:px-15 text-white max-w-3xl">
         <div className="flex items-center gap-3 mb-7">
-          <span className="h-[2px] w-10 bg-brand-red-primary" />
-          <span className="text-sm md:text-base font-semibold tracking-[0.2em] uppercase text-white/90">
-            {t("title")}
-          </span>
-        </div>
-
+            <span className="h-[2px] w-10 bg-brand-red-primary" />
+            <span className="text-sm md:text-base font-semibold tracking-[0.2em] uppercase text-white/90">
+              AlHeba International
+            </span>
+          </div>
         <h3 className="text-3xl md:text-5xl font-bold leading-tight">
-          {t("hookStart")}{" "}
-          <span className="text-brand-red-primary">
-            {t("hookSteel")}
-          </span>{" "}
-          {t("hookMiddle")}{" "}
-          <span className="text-brand-red-primary">
-            {t("hookMedical")}
-          </span>{" "}
-          {t("hookEnd")}
+          Exporting and Importing high-quality <span className="text-brand-red-primary">steel</span> and <span className="text-brand-red-primary">medical equipment</span> across the Middle East
         </h3>
 
         <p className="mt-6 text-lg md:text-xl leading-relaxed text-white/90">
-          {t("description")}
+          At AlHeba, bring you the experience of the biggest companies of iron and steel, to deliver you high-quality steel and premium medical equipment from Egypt across the Middle East
         </p>
 
         <div className="mt-10 flex flex-wrap items-center gap-5">
 
-          <a
-            href="#sectors"
-            className="group inline-flex items-center gap-3 rounded-md bg-brand-red-primary px-7 py-4 text-sm md:text-base font-semibold text-white transition-all duration-300 hover:-translate-y-1 hover:bg-brand-red-secondary"
-          >
-            {t("cta")}
-            <LuArrowRight
-              size={20}
-              className="transition-transform duration-300 group-hover:translate-x-1"
-            />
-          </a>
+            <a
+              href="#sectors"
+              className="group inline-flex items-center gap-3
+              rounded-md bg-brand-red-primary px-7 py-4
+              text-sm md:text-base font-semibold text-white
+              shadow-[0_8px_25px_rgba(178,0,3,0.3)]
+              transition-all duration-300
+              hover:-translate-y-1 hover:bg-brand-red-secondary
+              hover:shadow-[0_12px_30px_rgba(178,0,3,0.4)]"
+            >
+              Explore Our Sectors
+              <LuArrowRight
+                size={20}
+                className="transition-transform duration-300 group-hover:translate-x-1"
+              />
+            </a>
 
-          <a
-            href="#about"
-            className="inline-flex items-center gap-2 text-white/90 font-medium transition-colors duration-300 hover:text-white"
-          >
-            <LuGlobe size={19} />
-            {t("discover")}
-          </a>
+            <a
+              href="#about"
+              className="inline-flex items-center gap-2
+              text-white/90 font-medium
+              transition-colors duration-300 hover:text-white"
+            >
+              <LuGlobe size={19} />
+              Discover AlHeba
+            </a>
 
-        </div>
+          </div>
       </div>
     </section>
   );

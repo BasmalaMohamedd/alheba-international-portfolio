@@ -9,7 +9,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="bg-brand-navy-secondary text-white">
+    <footer className="bg-brand-navy-secondary text-white">
 
       <div className="max-w-7xl mx-auto px-6 md:px-12 py-16">
 
@@ -104,7 +104,7 @@ const Footer = () => {
         </div>
       </div>
 
-    </div>
+    </footer>
   );
 };
 

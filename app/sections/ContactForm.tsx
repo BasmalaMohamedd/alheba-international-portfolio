@@ -1,11 +1,7 @@
-"use client";
 
 import React from "react";
-import { useTranslations } from "next-intl";
 
 const ContactForm = () => {
-  const t = useTranslations("HomePage.contact");
-
   return (
     <form
       id="contact"
@@ -13,16 +9,17 @@ const ContactForm = () => {
       shadow-[0_8px_25px_rgba(0,0,0,0.15)]"
     >
       <h2 className="text-xl text-[#0e1527] font-bold mb-1">
-        {t("title")}
+        Contact Us
       </h2>
+
 
       {/* Name & Email */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-3">
         <input
           type="text"
           name="name"
-          placeholder={t("name")}
-          aria-label={t("name")}
+          placeholder="Your Name"
+          aria-label="Your Name"
           className="w-full px-3 py-2.5 text-sm text-gray-900 placeholder:text-gray-400 border border-gray-200 rounded-lg bg-gray-50 outline-none focus:border-[#8981A4] focus:ring-2 focus:ring-[#8981A4]/20"
           required
         />
@@ -30,8 +27,8 @@ const ContactForm = () => {
         <input
           type="email"
           name="email"
-          placeholder={t("email")}
-          aria-label={t("email")}
+          placeholder="Your Email"
+          aria-label="Your Email"
           className="w-full px-3 py-2.5 text-sm text-gray-900 placeholder:text-gray-400 border border-gray-200 rounded-lg bg-gray-50 outline-none focus:border-[#8981A4] focus:ring-2 focus:ring-[#8981A4]/20"
           required
         />
@@ -40,23 +37,21 @@ const ContactForm = () => {
       {/* Sector */}
       <select
         name="sector"
-        aria-label={t("select")}
+        aria-label="Select a sector"
         defaultValue=""
         className="w-full px-3 py-2.5 mb-3 text-sm text-gray-900 border border-gray-200 rounded-lg bg-gray-50 outline-none focus:border-[#8981A4]"
         required
       >
-        <option value="" disabled>
-          {t("select")}
-        </option>
-        <option value="steel">{t("steel sector")}</option>
-        <option value="medical">{t("medical equipment sector")}</option>
+        <option value="" disabled>Select a sector</option>
+        <option value="steel">Steel Sector</option>
+        <option value="medical">Medical Equipment Sector</option>
       </select>
 
       {/* Message */}
       <textarea
         name="message"
-        placeholder={t("message")}
-        aria-label={t("message")}
+        placeholder="Your Message..."
+        aria-label="Your Message"
         rows={3}
         className="w-full px-3 py-2.5 text-sm text-gray-900 placeholder:text-gray-400 border border-gray-200 rounded-lg bg-gray-50 outline-none focus:border-[#8981A4] focus:ring-2 focus:ring-[#8981A4]/20"
         required
@@ -71,9 +66,10 @@ const ContactForm = () => {
           hover:bg-[#D00005] hover:shadow-md
           transition-all duration-300"
         >
-          {t("submit")}
-        </button>
+          Send Message
+      </button>
       </div>
+      
     </form>
   );
 };

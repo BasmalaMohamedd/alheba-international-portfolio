@@ -1,76 +1,37 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Noto_Sans_Arabic } from "next/font/google";
-import "./styles/globals.css";
+import { Geist, Geist_Mono } from "next/font/google";
+import "./globals.css";
 
-import { Suspense } from "react";
-import { NextIntlClientProvider } from "next-intl";
-import { getLocale, getMessages } from "next-intl/server";
-import Navbar from "./components/ui/Navbar";
-import Footer from "./components/ui/Footer";
 
+//language css
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
 
+//language css
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
 
-const arabicFont = Noto_Sans_Arabic({
-  variable: "--font-arabic",
-  subsets: ["arabic"],
-});
+
+//add arabic language
+
 
 export const metadata: Metadata = {
   title: "Al Heba International Trading and Marketing Co.",
-  description: "Al Heba International Trading and Marketing Company",
+  description: "",
 };
 
-export default async function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  let locale = "en";
-  let messages = {};
-
-  try {
-    locale = await getLocale();
-    messages = await getMessages();
-  } catch (error) {
-    // Fallback values during static prerendering / build if context isn't available
-    locale = "en";
-  }
-
-  const isArabic = locale === "ar";
-
+//add arabic language
+export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
-      lang={locale}
-      dir={isArabic ? "rtl" : "ltr"}
-      className={`${geistSans.variable} ${geistMono.variable} ${arabicFont.variable} h-full antialiased`}
+      lang="en"
+      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body
-        className={`min-h-full flex flex-col ${
-          isArabic ? "font-arabic" : "font-sans"
-        }`}
-      >
-        <Suspense fallback={<div className="min-h-screen bg-[#F1F5F9]" />}>
-          <NextIntlClientProvider locale={locale} messages={messages}>
-            <header className="bg-[#F1F5F9]">
-              <Navbar />
-            </header>
-
-            <main className="flex-1">{children}</main>
-
-            <footer>
-              <Footer />
-            </footer>
-          </NextIntlClientProvider>
-        </Suspense>
-      </body>
+      <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );
 }
