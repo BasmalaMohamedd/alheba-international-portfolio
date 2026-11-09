@@ -1,12 +1,16 @@
 import { getRequestConfig } from "next-intl/server";
 import { cookies } from "next/headers";
-import { connection } from "next/server";
 
 export default getRequestConfig(async () => {
-  await connection();
+  let cookieLocale: string | undefined;
 
-  const store = await cookies();
-  const cookieLocale = store.get("locale")?.value;
+  try {
+    const store = await cookies();
+    cookieLocale = store.get("locale")?.value;
+  } catch (error) {
+    // During static prerendering/build time, cookies() may not be available
+    cookieLocale = undefined;
+  }
 
   const locale = cookieLocale === "ar" ? "ar" : "en";
 

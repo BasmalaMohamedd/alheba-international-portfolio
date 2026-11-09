@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 
 import { Metadata } from 'next'
-import SectorHero from '../../components/ui/SectorHero'
+import SectorHero from '../components/ui/SectorHero'
 
 export const metadata: Metadata = {
   title: 'Steel',
@@ -9,13 +9,17 @@ export const metadata: Metadata = {
 }
 const SteelPage: React.FC = () => {
   return (
-    <div>
+    <Suspense>
+      <div>
+
       <SectorHero 
       cover={"steel-cover.png"} 
       title={"Iron and Steel Exporting and Importing"}
       description={""} 
       />
     </div>
+    </Suspense>
+    
   )
 }
 

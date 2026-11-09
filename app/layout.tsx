@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Noto_Sans_Arabic } from "next/font/google";
 import "./styles/globals.css";
 
-
+import { Suspense } from "react";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
 import Navbar from "./components/ui/Navbar";
@@ -27,13 +27,22 @@ export const metadata: Metadata = {
   title: "Al Heba International Trading and Marketing Co.",
   description: "Al Heba International Trading and Marketing Company",
 };
+
 export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  const locale = await getLocale();
-  const messages = await getMessages();
+  let locale = "en";
+  let messages = {};
+
+  try {
+    locale = await getLocale();
+    messages = await getMessages();
+  } catch (error) {
+    // Fallback values during static prerendering / build if context isn't available
+    locale = "en";
+  }
 
   const isArabic = locale === "ar";
 
@@ -48,17 +57,19 @@ export default async function RootLayout({
           isArabic ? "font-arabic" : "font-sans"
         }`}
       >
-        <NextIntlClientProvider locale={locale} messages={messages}>
-          <header className="bg-[#F1F5F9]">
-            <Navbar />
-          </header>
+        <Suspense fallback={<div className="min-h-screen bg-[#F1F5F9]" />}>
+          <NextIntlClientProvider locale={locale} messages={messages}>
+            <header className="bg-[#F1F5F9]">
+              <Navbar />
+            </header>
 
-          {children}
+            <main className="flex-1">{children}</main>
 
-          <footer>
-            <Footer />
-          </footer>
-        </NextIntlClientProvider>
+            <footer>
+              <Footer />
+            </footer>
+          </NextIntlClientProvider>
+        </Suspense>
       </body>
     </html>
   );
