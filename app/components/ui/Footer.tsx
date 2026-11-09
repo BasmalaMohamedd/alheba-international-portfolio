@@ -4,10 +4,10 @@ import Image from "next/image";
 import ContactForm from "@/app/sections/ContactForm";
 import { MdEmail, MdLocationOn } from "react-icons/md";
 import { BsFillTelephoneFill } from "react-icons/bs";
-
-import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 const Footer = () => {
+  const t = useTranslations("HomePage.footer")
   return (
     <footer className="bg-brand-navy-secondary text-white">
 
@@ -20,21 +20,19 @@ const Footer = () => {
 
             <div className="flex items-center gap-3">
               <Image
-                src="/logo-en.png"
+                src={t("logo")}
                 alt="AlHeba Logo"
                 width={65}
                 height={65}
                 className="bg-brand-gray-primary rounded-sm"
               />
               <h2 className="text-2xl font-bold">
-                AlHeba International
+                {t("title")}
               </h2>
             </div>
 
             <p className="max-w-md text-gray-300 leading-8">
-              Connecting markets through quality steel and medical
-              equipment. Delivering trusted products and reliable
-              solutions across Egypt and the Middle East.
+              {t("description")}
             </p>
             <div>
               <div className="flex items-center gap-2 text-gray-300">
@@ -64,18 +62,18 @@ const Footer = () => {
 
             <div className="mt-4">
               <h3 className="text-lg font-semibold mb-4">
-                Our Sectors
+                {t("our sectors")}
               </h3>
 
               <ul className="flex flex-col gap-3 text-gray-300">
                 <li>
                   <a href="/steel" className="hover:text-white transition-colors">
-                    Steel Sector
+                    {t("steel sector")}
                   </a>
                 </li>
                 <li>
                   <a href="/medical-equipment" className="hover:text-white transition-colors">
-                    Medical Equipment Sector
+                    {t("medical equipment sector")}
                   </a>
                 </li>
               </ul>

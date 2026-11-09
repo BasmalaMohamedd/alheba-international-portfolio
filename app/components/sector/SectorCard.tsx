@@ -1,3 +1,4 @@
+import { useTranslations } from 'next-intl'
 import Image, { StaticImageData } from 'next/image'
 import Link from 'next/link'
 import React from 'react'
@@ -11,6 +12,7 @@ type Props = {
 }
 
 const SectorCard = (props: Props) => {
+  const t = useTranslations("HomePage.sectors")
   return (
     <div className="bg-brand-ice-blue-primary rounded-lg shadow-md p-6 flex flex-col items-start">
           <div className="w-full h-50 overflow-hidden mb-4">
@@ -28,7 +30,7 @@ const SectorCard = (props: Props) => {
           </p>
           <div className="mt-auto w-full flex justify-end">
             <Link href={props.href} className="mt-4 inline-block bg-brand-red-primary text-white px-4 py-2 rounded hover:bg-brand-red-secondary transition">
-                Learn More
+                {t("learn more")}
             </Link>
           </div>
           
