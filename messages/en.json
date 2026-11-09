@@ -21,7 +21,7 @@
         "story": "Story",
         "contact": "Contact",
         "language": "Language",
-        "logo": "logo-en.png",
+        "logo": "/logo-en.png",
         "alheba": "AlHeba",
         "international": "International"
     },
