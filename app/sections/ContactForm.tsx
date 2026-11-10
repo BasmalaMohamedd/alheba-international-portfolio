@@ -90,8 +90,9 @@ const ContactForm = () => {
         >
           {t("submit")}
         </button>
-        <p>{result}</p>
+        
       </div>
+      <p className="text-brand-navy-secondary">{result}</p>
     </form>
   );
 };
