@@ -10,7 +10,7 @@ const HeroSection = () => {
   const locale = useLocale();
 
   return (
-    <section className="relative isolate md:h-screen min-h-160 w-full flex items-center overflow-hidden">
+    <section className="mt-25 md:mt-10 relative isolate md:h-screen min-h-160 w-full flex items-center overflow-hidden">
 
       {/* Background image */}
       <div
