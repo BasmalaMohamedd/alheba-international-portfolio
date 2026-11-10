@@ -1,13 +1,30 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import { useTranslations } from "next-intl";
 
 const ContactForm = () => {
   const t = useTranslations("HomePage.contact");
+  const [result, setResult] = useState("");
+
+  const onSubmit = async (event:any) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    formData.append("access_key", "e5e2b801-8ba8-4be3-b5b1-480159977e35");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const data = await response.json();
+    setResult(data.success ? "Success!" : "Error");
+  };
+
 
   return (
     <form
+      onSubmit={onSubmit}
       id="contact"
       className="w-full max-w-lg p-5 md:p-6 bg-white rounded-xl
       shadow-[0_8px_25px_rgba(0,0,0,0.15)]"
@@ -73,6 +90,7 @@ const ContactForm = () => {
         >
           {t("submit")}
         </button>
+        <p>{result}</p>
       </div>
     </form>
   );
