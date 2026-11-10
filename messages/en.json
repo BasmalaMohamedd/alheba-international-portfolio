@@ -71,5 +71,119 @@
       "qualityGuaranteed": "Quality Guaranteed"
     }
     
+    },
+    "MedicalEquipment": {
+      
+  "products": {
+    "section-title": "Explore some of our products",
+    "robot-gloves": {
+      "title": "Robot Gloves",
+      "description": "Rehabilitation hand device."
+    },
+    "medical-tape": {
+      "title": "Medical Tape",
+      "description": "Adhesive medical tape rolls."
+    },
+    "alchohol70": {
+      "title": "Alcohol 70%",
+      "description": "Antiseptic rubbing alcohol."
+    },
+    "medical-cap": {
+      "title": "Medical Cap",
+      "description": "Disposable surgical caps."
+    },
+    "shoes-cover": {
+      "title": "Shoes Cover",
+      "description": "Disposable shoe covers."
+    },
+    "medical-gowns": {
+      "title": "Medical Gowns",
+      "description": "Protective medical gowns."
+    },
+    "medical-bed": {
+      "title": "Medical Bed",
+      "description": "Adjustable hospital bed."
+    },
+    "syringe": {
+      "title": "Syringe",
+      "description": "Disposable medical syringes."
+    },
+    "diapers": {
+      "title": "Diapers",
+      "description": "Adult disposable diapers."
+    },
+    "device03": {
+      "title": "Device 03",
+      "description": "Medical monitoring device."
+    },
+    "medical-mat": {
+      "title": "Medical Mat",
+      "description": "Therapeutic massage mat."
+    },
+    "gown": {
+      "title": "Gown",
+      "description": "Medical uniform top."
+    },
+    "medical-organizer": {
+      "title": "Medical Organizer",
+      "description": "Pill and medication organizer."
+    },
+    "covid-test": {
+      "title": "Covid Test",
+      "description": "Rapid antigen test kit."
+    },
+    "test-tubes": {
+      "title": "Test Tubes",
+      "description": "Laboratory blood test tubes."
+    },
+    "test-strips": {
+      "title": "Test Strips",
+      "description": "Diagnostic testing strips."
+    },
+    "device01": {
+      "title": "Device 01",
+      "description": "Handheld medical device."
+    },
+    "device02": {
+      "title": "Device 02",
+      "description": "Percussion massage device."
+    },
+    "massage-gun": {
+      "title": "Massage Gun",
+      "description": "Muscle recovery massage gun."
+    },
+    "pain-relief-pen": {
+      "title": "Pain Relief Pen",
+      "description": "Pain relief therapy pen."
+    },
+    "back-support01": {
+      "title": "Back Support 01",
+      "description": "Orthopedic back brace."
+    },
+    "back-support02": {
+      "title": "Back Support 02",
+      "description": "Lumbar support belt."
+    },
+    "knee-support": {
+      "title": "Knee Support",
+      "description": "Knee compression sleeve."
+    },
+    "wheel-chair": {
+      "title": "Wheel Chair",
+      "description": "Standard mobility wheelchair."
+    },
+    "walking-aid": {
+      "title": "Walking Aid",
+      "description": "Portable tripod walking cane."
+    },
+    "cotton-pad": {
+      "title": "Cotton Pad",
+      "description": "Medical cotton pads."
+    },
+    "medical-gauze": {
+      "title": "Medical Gauze",
+      "description": "Sterile medical gauze roll."
+    }
+  }
 }
 }

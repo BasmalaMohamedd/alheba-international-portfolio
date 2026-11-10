@@ -9,7 +9,6 @@ import CountriesSection from "./sections/CountriesSection";
 
 export default function Home() {
   return (
-    <>
     <main className="">
       <HeroSection />
       <SocialProofSection />
@@ -19,11 +18,7 @@ export default function Home() {
       <StorySection />
       {/* <ContactForm /> */}
     </main>
-    <footer>
-      <Footer />
-    </footer>
 
-    </>
     
   );
 }

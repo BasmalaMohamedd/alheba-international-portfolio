@@ -66,5 +66,118 @@
       "qualityGuaranteed": "جودة مضمونة"
       
     }
+  },
+  "MedicalEquipment":{
+  "products": {
+    "section-title": "اكتشف بعض منتجاتنا",
+    "robot-gloves": {
+      "title": "قفازات تأهيلية",
+      "description": "جهاز تأهيل وإعادة حركة اليد."
+    },
+    "medical-tape": {
+      "title": "شريط طبي لاصق",
+      "description": "بكرات شريط طبي لاصق."
+    },
+    "alchohol70": {
+      "title": "كحول طبي 70%",
+      "description": "كحول مطهر ومعقم."
+    },
+    "medical-cap": {
+      "title": "غطاء رأس طبي",
+      "description": "أغطية رأس جراحية للاستخدام مرة واحدة."
+    },
+    "shoes-cover": {
+      "title": "غطاء أحذية",
+      "description": "أغطية أحذية واقية للاستخدام مرة واحدة."
+    },
+    "medical-gowns": {
+      "title": "رداء طبي واقٍ",
+      "description": "أردية طبية واقية."
+    },
+    "medical-bed": {
+      "title": "سرير طبي",
+      "description": "سرير مستشفى قابل للتعديل."
+    },
+    "syringe": {
+      "title": "حقن طبية",
+      "description": "سرنجات طبية للاستخدام مرة واحدة."
+    },
+    "diapers": {
+      "title": "حفاضات",
+      "description": "حفاضات للاستخدام مرة واحدة."
+    },
+    "device03": {
+      "title": "جهاز طبي 03",
+      "description": "جهاز مراقبة وفحص طبي."
+    },
+    "medical-mat": {
+      "title": "مرتبة طبية",
+      "description": "مرتبة مساج وتأهيل طبي."
+    },
+    "gown": {
+      "title": "زي طبي (سكراب)",
+      "description": "قميص زي طبي."
+    },
+    "medical-organizer": {
+      "title": "منظم أدوية",
+      "description": "منظم للحبوب والأدوية اليومية."
+    },
+    "covid-test": {
+      "title": "اختبار كورونا السريع",
+      "description": "مجموعة مسحة اختبار المستضدات السريع."
+    },
+    "test-tubes": {
+      "title": "أنابيب اختبار",
+      "description": "أنابيب عينات دم للمختبرات."
+    },
+    "test-strips": {
+      "title": "شرائط اختبار",
+      "description": "شرائط للتحاليل والتشخيص الطبي."
+    },
+    "device01": {
+      "title": "جهاز طبي 01",
+      "description": "جهاز طبي محمول."
+    },
+    "device02": {
+      "title": "جهاز طبي 02",
+      "description": "جهاز تدليك ومساج طبي."
+    },
+    "massage-gun": {
+      "title": "مسدس مساج",
+      "description": "جهاز مساج لتدليك العضلات."
+    },
+    "pain-relief-pen": {
+      "title": "قلم مسكن للآلام",
+      "description": "قلم علاج وتحفيز لتخفيف الألم."
+    },
+    "back-support01": {
+      "title": "حزام دعم الظهر 01",
+      "description": "دعامة ظهر تقويمية."
+    },
+    "back-support02": {
+      "title": "حزام دعم الظهر 02",
+      "description": "حزام دعم للفقرات القطنية."
+    },
+    "knee-support": {
+      "title": "دعامة ركبة",
+      "description": "مشد ركبة ضاغط."
+    },
+    "wheel-chair": {
+      "title": "كرسي متحرك",
+      "description": "كرسي متحرك قياسي للمساعدة على الحركة."
+    },
+    "walking-aid": {
+      "title": "عكاز ثلاثي",
+      "description": "عكاز للمساعدة على المشي مزود بقاعدة ثلاثية."
+    },
+    "cotton-pad": {
+      "title": "قطن طبي",
+      "description": "قطع قطن طبية ماصة."
+    },
+    "medical-gauze": {
+      "title": "شاش طبي",
+      "description": "لفة شاش طبي معقم."
+    }
   }
+}
 }

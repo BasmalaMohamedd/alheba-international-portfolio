@@ -2,6 +2,7 @@ import React from 'react'
 
 import { Metadata } from 'next'
 import SectorHero from '../components/ui/SectorHero'
+import MedicalProducts from '../components/medical/MedicalProducts'
 
 export const metadata: Metadata = {
   title: 'Medical Equipment',
@@ -16,6 +17,7 @@ const MedicalEquipmentPage: React.FC = () => {
       title={"Medical Equipment Importing"}
       description={"Explore our range of medical equipment imported from china to enhance healthcare delivery and patient care."} 
       />
+      <MedicalProducts />
       
     </div>
   )

@@ -4,6 +4,7 @@ import "./globals.css";
 import { Locale, NextIntlClientProvider, useLocale } from "next-intl";
 import Navbar from "./components/ui/Navbar";
 import { cookies } from "next/headers";
+import Footer from "./components/ui/Footer";
 
 //language css
 const geistSans = Geist({
@@ -42,7 +43,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <body className="min-h-full flex flex-col">
             <NextIntlClientProvider>
               <Navbar/>
-              {children}</NextIntlClientProvider>
+              {children}
+              <Footer />
+              </NextIntlClientProvider>
           
         </body>
       </html>
