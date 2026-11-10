@@ -73,6 +73,10 @@
     
     },
     "MedicalEquipment": {
+      "hero":{
+        "title":"Medical Equipment Importing",
+        "description":"Explore our range of medical equipment imported from china to enhance healthcare delivery and patient care."
+      },
       
   "products": {
     "section-title": "Explore some of our products",
