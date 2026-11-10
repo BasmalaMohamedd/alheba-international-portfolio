@@ -2,15 +2,15 @@
 "use client";
 
 import { useLocale, useTranslations } from "next-intl";
-import React from "react";
 import { LuArrowLeft, LuArrowRight, LuGlobe } from "react-icons/lu";
+import Navbar from "../components/ui/Navbar";
 
 const HeroSection = () => {
   const t = useTranslations("HomePage.hero");
   const locale = useLocale();
 
   return (
-    <section className="mt-15 md:mt-10 relative isolate md:h-screen min-h-160 w-full flex items-center overflow-hidden">
+    <section className=" relative isolate md:h-screen min-h-160 w-full flex items-center overflow-hidden">
 
       {/* Background image */}
       <div

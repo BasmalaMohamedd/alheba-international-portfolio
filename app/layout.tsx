@@ -23,6 +23,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Al Heba International Trading and Marketing Co.",
   description: "",
+  icons: {
+    icon: '/logo-ar.png', 
+  },
 };
 
 export const instant = false; // allow this route to block on the cookie
