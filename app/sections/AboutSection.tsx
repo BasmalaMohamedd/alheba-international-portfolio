@@ -8,12 +8,12 @@ const AboutSection = () => {
   const t = useTranslations("HomePage.about");
 
   return (
-    <section id="about" className="py-20 px-10 md:px-20 bg-brand-navy-primary">
-      <h1 className="text-3xl font-bold text-white">
+    <section id="about" className="py-16 md:py-20 px-6 sm:px-8 lg:px-12 bg-brand-navy-primary">
+      <h2 className="max-w-7xl mx-auto text-3xl font-bold text-white">
         {t("title")}
-      </h1>
+      </h2>
 
-      <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-10">
+      <div className="max-w-7xl mx-auto mt-10 grid grid-cols-1 md:grid-cols-2 gap-10">
         <div className="flex flex-col justify-center">
           <p className="text-gray-300 text-lg leading-relaxed mb-6">
             {t("body")}

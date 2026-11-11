@@ -29,7 +29,7 @@ const ContactForm = () => {
       className="w-full max-w-lg p-5 md:p-6 bg-white rounded-xl
       shadow-[0_8px_25px_rgba(0,0,0,0.15)]"
     >
-      <h2 className="text-xl text-[#0e1527] font-bold mb-1">
+      <h2 className="text-xl text-brand-navy-secondary font-bold mb-1">
         {t("title")}
       </h2>
 
@@ -40,7 +40,7 @@ const ContactForm = () => {
           name="name"
           placeholder={t("name")}
           aria-label={t("name")}
-          className="w-full px-3 py-2.5 text-sm text-gray-900 placeholder:text-gray-400 border border-gray-200 rounded-lg bg-gray-50 outline-none focus:border-[#8981A4] focus:ring-2 focus:ring-[#8981A4]/20"
+          className="w-full px-3 py-2.5 text-sm text-gray-900 placeholder:text-gray-400 border border-gray-200 rounded-lg bg-gray-50 outline-none focus:border-brand-navy-primary focus:ring-2 focus:ring-brand-navy-primary/20"
           required
         />
 
@@ -49,7 +49,7 @@ const ContactForm = () => {
           name="email"
           placeholder={t("email")}
           aria-label={t("email")}
-          className="w-full px-3 py-2.5 text-sm text-gray-900 placeholder:text-gray-400 border border-gray-200 rounded-lg bg-gray-50 outline-none focus:border-[#8981A4] focus:ring-2 focus:ring-[#8981A4]/20"
+          className="w-full px-3 py-2.5 text-sm text-gray-900 placeholder:text-gray-400 border border-gray-200 rounded-lg bg-gray-50 outline-none focus:border-brand-navy-primary focus:ring-2 focus:ring-brand-navy-primary/20"
           required
         />
       </div>
@@ -59,7 +59,7 @@ const ContactForm = () => {
         name="sector"
         aria-label={t("select")}
         defaultValue=""
-        className="w-full px-3 py-2.5 mb-3 text-sm text-gray-900 border border-gray-200 rounded-lg bg-gray-50 outline-none focus:border-[#8981A4]"
+        className="w-full px-3 py-2.5 mb-3 text-sm text-gray-900 border border-gray-200 rounded-lg bg-gray-50 outline-none focus:border-brand-navy-primary focus:ring-2 focus:ring-brand-navy-primary/20"
         required
       >
         <option value="" disabled>
@@ -75,7 +75,7 @@ const ContactForm = () => {
         placeholder={t("message")}
         aria-label={t("message")}
         rows={3}
-        className="w-full px-3 py-2.5 text-sm text-gray-900 placeholder:text-gray-400 border border-gray-200 rounded-lg bg-gray-50 outline-none focus:border-[#8981A4] focus:ring-2 focus:ring-[#8981A4]/20"
+        className="w-full px-3 py-2.5 text-sm text-gray-900 placeholder:text-gray-400 border border-gray-200 rounded-lg bg-gray-50 outline-none focus:border-brand-navy-primary focus:ring-2 focus:ring-brand-navy-primary/20"
         required
       />
 
@@ -83,9 +83,9 @@ const ContactForm = () => {
       <div className="mt-4 flex justify-end">
         <button
           type="submit"
-          className="bg-[#B20003] text-white text-sm font-semibold
+          className="bg-brand-red-primary text-white text-sm font-semibold
           px-6 py-2.5 rounded-lg shadow-sm
-          hover:bg-[#D00005] hover:shadow-md
+          hover:bg-brand-red-secondary hover:shadow-md
           transition-all duration-300"
         >
           {t("submit")}

@@ -38,7 +38,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         dir={locale === 'ar'?'rtl': 'ltr'}
         className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
       >
-        <body className="min-h-full flex flex-col">
+        <body className="min-h-full flex flex-col pt-16">
             <NextIntlClientProvider>
               <Navbar/>
               {children}

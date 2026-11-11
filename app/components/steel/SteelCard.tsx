@@ -35,7 +35,7 @@ const SteelCard = ({
           className="object-contain p-4"
         />
         {/* HS Code Badge */}
-        <div className="absolute top-3 right-3 bg-slate-900/90 backdrop-blur-sm text-brand-ice-blue-primary border border-brand-ice-blue-primary-500/30 px-3 py-1 rounded-md text-[11px] font-mono font-semibold">
+        <div className="absolute top-3 right-3 bg-slate-900/90 backdrop-blur-sm text-brand-ice-blue-primary border border-brand-ice-blue-primary/30 px-3 py-1 rounded-md text-[11px] font-mono font-semibold">
           HS: {hsCode}
         </div>
       </div>

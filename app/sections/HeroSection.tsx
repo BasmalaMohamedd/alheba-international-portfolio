@@ -3,14 +3,13 @@
 
 import { useLocale, useTranslations } from "next-intl";
 import { LuArrowLeft, LuArrowRight, LuGlobe } from "react-icons/lu";
-import Navbar from "../components/ui/Navbar";
 
 const HeroSection = () => {
   const t = useTranslations("HomePage.hero");
   const locale = useLocale();
 
   return (
-    <section className=" relative isolate md:h-screen min-h-160 w-full flex items-center overflow-hidden">
+    <section className="relative isolate min-h-[calc(100svh-4rem)] w-full flex items-center overflow-hidden">
 
       {/* Background image */}
       <div
@@ -25,12 +24,12 @@ const HeroSection = () => {
       {/* Dark overlay */}
       <div className="
         absolute inset-0 z-10
-        bg-linear-to-r from-[#111827]/90 via-[#111827]/65 to-black/20
+        bg-linear-to-r from-brand-overlay/90 via-brand-overlay/65 to-black/20
         rtl:bg-linear-to-l
       " />
 
       {/* Hero Content */}
-      <div className="relative z-10 px-10 md:px-15 text-white max-w-3xl">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 text-white">
 
         <div className="flex items-center gap-3 mb-7">
           <span className="h-[2px] w-10 bg-brand-red-primary" />
@@ -39,7 +38,7 @@ const HeroSection = () => {
           </span>
         </div>
 
-        <h3 className="text-3xl md:text-5xl font-bold leading-tight">
+        <h1 className="max-w-3xl text-3xl md:text-5xl font-bold leading-tight">
           {t("hookStart")}{" "}
           <span className="text-brand-red-primary">
             {t("hookSteel")}
@@ -49,7 +48,7 @@ const HeroSection = () => {
             {t("hookMedical")}
           </span>{" "}
           {t("hookEnd")}
-        </h3>
+        </h1>
 
         <p className="mt-6 text-lg md:text-xl leading-relaxed text-white/90">
           {t("description")}
