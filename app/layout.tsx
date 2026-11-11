@@ -30,12 +30,7 @@ export const metadata: Metadata = {
 
 export const instant = false; // allow this route to block on the cookie
 export default function RootLayout({ children }: LayoutProps<"/">) {
-  async function changeLocaleAction(locale:Locale){
-        "use server"
-        const store = await cookies();
-        store.set("locale", locale);
-        console.log(locale);
-    }
+  
     const locale = useLocale()
     return (
       <html

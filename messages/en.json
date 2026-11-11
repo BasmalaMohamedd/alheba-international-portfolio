@@ -73,6 +73,7 @@
     
     },
     "MedicalEquipment": {
+
       "hero":{
         "title":"Medical Equipment Importing",
         "description":"Explore our range of medical equipment imported from china to enhance healthcare delivery and patient care."
@@ -189,5 +190,172 @@
       "description": "Sterile medical gauze roll."
     }
   }
+}, "SteelProducts": 
+{
+  "header": "Iron and Steel Exporting and Importing",
+  "description": "specializes in a comprehensive range of industrial and construction steel products, covering everything from raw semi-finished stock to precision-engineered long and flat items",
+  "products": {
+    "section-title": "Explore more about our Steel",
+    "rebar": {
+      "name": "Rebar Steel",
+      "arabicName": "حديد تسليح",
+      "categoryLabel": "Long Products",
+      "hsCode": "72143000",
+      "imagePath": "/images/steel/rebar-steel.jpg",
+      "description": "Deformed steel bars manufactured for concrete reinforcement and structural engineering applications.",
+      "highlights": [
+        "Size Range: 6 mm to 32 mm diameters",
+        "Standards: ASTM A615 (Gr 40/60), BS 4449 (1997/2005), GCC/ISO 6935-2",
+        "Standard Lengths: 6m, 12m, and 13m bars",
+        "High strength, ductility, and weldability via quenching process"
+      ]
+    },
+    "billet": {
+      "name": "Billet Steel",
+      "arabicName": "حديد بليت",
+      "categoryLabel": "Semi-Finished",
+      "hsCode": "72071920",
+      "imagePath": "/images/steel/billet-steel.jpg",
+      "description": "Square semi-finished steel blocks used as primary feedstock for rerolling into long products.",
+      "highlights": [
+        "Cross-Sections: 130x130 mm and 150x150 mm",
+        "Length Range: 3.8m up to 14m (±50mm tolerance)",
+        "Carbon Content: 0.40% to 0.93% (Max limits for Si, Mn, P, S)",
+        "Strict squareness, straightness, and corner radius tolerances"
+      ]
+    },
+    "railway": {
+      "name": "Railway Steel",
+      "arabicName": "قضبان السكك الحديدية",
+      "categoryLabel": "Long Products",
+      "hsCode": "73021000",
+      "imagePath": "/images/steel/railway-steel.jpg",
+      "description": "Heavy structural steel rail profiles manufactured for railway networks and industrial tracks.",
+      "highlights": [
+        "Engineered for heavy axle-load rail networks",
+        "Specialized profile geometry and high fatigue resistance",
+        "Suitable for national transit and industrial crane lines"
+      ]
+    },
+    "hrc": {
+      "name": "Hot Rolled Steel Coil (HRC)",
+      "arabicName": "حديد مسحوب على الحار",
+      "categoryLabel": "Flat Products",
+      "hsCode": "7225",
+      "imagePath": "/images/steel/hot-rolled-steel-coil.jpg",
+      "description": "Flat steel rolled at high temperatures, supplied in coils or heavy plates for industrial fabrication.",
+      "highlights": [
+        "Supplied in continuous coils and cut-to-length stacked sheets",
+        "Ideal for heavy structural framing, pipes, and pressure vessels",
+        "High formability and structural toughness"
+      ]
+    },
+    "crc": {
+      "name": "Cold Rolled Steel Coil (CRC)",
+      "arabicName": "حديد مسحوب على البارد",
+      "categoryLabel": "Flat Products",
+      "hsCode": "72262021",
+      "imagePath": "/images/steel/cold-rolled-steel-coil.jpg",
+      "description": "Precision ambient-rolled flat steel delivering superior surface finish and tight dimensional tolerances.",
+      "highlights": [
+        "Exceptional surface finish ready for painting and coating",
+        "Enhanced mechanical strength and uniform thickness",
+        "Used in automotive panels, home appliances, and light framing"
+      ]
+    },
+    "galvanized": {
+      "name": "Galvanized Steel Coil",
+      "arabicName": "حديد مجلفن",
+      "categoryLabel": "Flat Products",
+      "hsCode": "7212",
+      "imagePath": "/images/steel/galvanized-steel-coil.jpg",
+      "description": "Zinc-coated steel coils offering ultimate resistance against atmospheric and marine oxidation.",
+      "highlights": [
+        "Protective hot-dip zinc coating layer",
+        "Superior anti-corrosion durability for outdoor and humid environments",
+        "Widely used in roofing sheets, HVAC ductwork, and panels"
+      ]
+    },
+    "scrap": {
+      "name": "Steel Scrap",
+      "arabicName": "حديد خرده",
+      "categoryLabel": "Recycling",
+      "hsCode": "Raw Material",
+      "imagePath": "/images/steel/scrap.jpg",
+      "description": "Sorted heavy industrial steel scrap utilized as direct melting feedstock for electric arc furnaces.",
+      "highlights": [
+        "Primary furnace feedstock for steel mills and foundries",
+        "Sorted structural scrap elements for efficient smelting operations"
+      ]
+    }
+  },
+  "RebarMechanicalSpecs": {
+    "title": "Mechanical Specifications for Rebar",
+    "headers": {
+      "standard": "Standard",
+      "grade": "Grade",
+      "nominalDiameter": "Nominal Diameter (mm)",
+      "yieldStrength": "Yield Strength (MPa Min)",
+      "tensileStrength": "Tensile Strength (MPa Min)",
+      "tensileYieldRatio": "Tensile to Yield Ratio (Min)",
+      "elongation200mm": "% Elongation in 200 mm (Min)",
+      "elongationFracture": "% Elongation at Fracture (Min)",
+      "maxUniformElongation": "% Max Uniform Elongation Before Fracture (Min)"
+    },
+    "values": {
+      "notApplicable": "N/A",
+      "greaterThan25": "> 25",
+      "astmA615": "ASTM A615",
+      "bs4449_1997": "BS 4449 : 1997",
+      "bs4449_2005": "BS 4449 : 2005",
+      "gccIso6935": "GSO ISO 6935-2:2007 / ISO 6935-2"
+    }
+  },
+  "RebarChemicalSpecs": {
+    "title": "Chemical Composition for Rebar",
+    "headers": {
+      "standard": "Standard",
+      "grade": "Grade",
+      "carbon": "Carbon (C Max %)",
+      "silicon": "Silicon (Si Max %)",
+      "manganese": "Manganese (Mn Max %)",
+      "sulfur": "Sulfur (S Max %)",
+      "phosphorus": "Phosphorus (P Max %)",
+      "nitrogen": "Nitrogen (N Max %)",
+      "copper": "Copper (Cu Max %)",
+      "carbonEquivalent": "Carbon Equivalent (CEV Max %)"
+    },
+    "values": {
+      "notSpecified": "—",
+      "astmA615": "ASTM A615",
+      "bs4449_1997": "BS 4449 : 1997",
+      "bs4449_2005": "BS 4449 : 2005",
+      "gccIso6935": "GSO ISO 6935-2:2007 / ISO 6935-2"
+    }
+  },
+  "BilletSpecs": {
+    "title": "Billet Specifications",
+    "sections": {
+      "chemical": "Chemical Composition (Max %)",
+      "dimensional": "Dimensions & Tolerances"
+    },
+    "headers": {
+      "size": "Billet Size (mm)",
+      "carbon": "Carbon (C Max %)",
+      "silicon": "Silicon (Si Max %)",
+      "manganese": "Manganese (Mn Max %)",
+      "phosphorus": "Phosphorus (P Max %)",
+      "sulfur": "Sulfur (S Max %)",
+      "length": "Length",
+      "lengthTolerance": "Length Tolerance",
+      "diagonalTolerance": "Diagonal Tolerance",
+      "squareness": "Squareness (Corner)",
+      "twist": "Twist",
+      "straightness": "Straightness"
+    }
+  }
+
 }
+
+
 }
